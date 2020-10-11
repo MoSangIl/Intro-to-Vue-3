@@ -28,7 +28,7 @@
           </ul>
           <div v-for="(variant, count) in variants" :key="variant.id">{{ variant.color }}
             <ul>
-              <li v-for="each in sizes[count]">{{ each }}</li>
+              <li v-for="each in sizes[count]" :key="count">{{ each }}</li>
             </ul>
           </div>
         </div>
